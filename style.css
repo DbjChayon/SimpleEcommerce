@@ -1,0 +1,510 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    
+}
+
+.container .logo{
+    position:absolute;
+    left:90px;
+    top:50px;
+}
+
+.container  .logo a{
+    font-size: 2rem;
+    color:#3d3d4a;
+    font-weight: bolder;
+    text-shadow:2px 2px 10px rgba(0,0,0,0.8);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.container .serchbox{
+    position:fixed;
+    right: 90px;
+    top:50px;
+    width:170px;
+    height:45px;
+    background-color: #ffffff;
+    border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+    box-shadow: 2px 2px 30px rgba(167,158,245,0.2);
+    border:1px solid rgba(167,158,245,0.2);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serch input{
+    width:90px;
+    height:20px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border:none;
+    outline:none;
+    
+}
+
+.img1 {
+    position: absolute;
+    left:15%;
+    top:50%;
+    transform: translate(-15%,-50%);
+}
+
+.img1 img{
+    height:300px;
+}
+
+
+.inform{
+    position:absolute;
+    left:90%;
+    top:50%;
+    transform: translate(-90%,-50%);
+}
+
+.inform h1,h2{
+    font-size: 4rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 60px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color:#3d3d4a
+}
+
+.inform  .color {
+    color:#7a72ff
+}
+
+.inform .btn1{
+    width:150px;
+    height:40px;
+    background-color:#2f2e41;
+    color:#ffffff;
+    margin-left: 15px;
+    border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+    font-size: 1rem;
+    box-shadow: 2px 2px 30px rgba(0,0,0, 0.1);
+    font-weight: 600;
+    outline:none;
+    border:transparent !important;
+    cursor:pointer
+    
+}
+
+.inform .btn1:hover{
+    background-color: #7a72ff;
+    transition: all ease 0.5s;
+}
+
+.iconarea{
+    position:fixed;
+    top:50%;
+    left: 2%;
+    transform: translate(-2%,-50%);
+    background-color:#fff;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+
+.iconarea a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:20px 15px;
+    font-size: 1.4rem;
+   
+}
+
+.iconarea a i{
+    color:rgba(0,0,0,0.8)
+}
+
+.iconarea a:hover>.fa-facebook{
+    color:#3b5998;
+}
+
+.iconarea a:hover>.fa-square-twitter{
+    color:#00acee;
+}
+
+.iconarea a:hover>.fa-square-instagram{
+    color:#3f729b;
+}
+
+.iconarea a:hover>.fa-youtube{
+    color:#FF0000;
+}
+ 
+.productbox{
+    width:85%;
+    margin:30px auto;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.productbox h3{text-align: center;
+               font-size: 2rem;
+               font-weight: 700px;
+
+}
+
+.productbox .products{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   width:100%;
+   padding:20px;
+}
+
+.productbox .products .product{
+    width:250px;
+    height:330px;
+    margin:20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productbox .products .product img{
+    width:100%;
+}
+.productbox .products .product p{
+    color:#4d4d4d70;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.productbox .products .product a{
+    text-decoration: none;
+    color:#2c2c2c;
+    font-size:1rem;
+}
+
+.productbox .products .product .btnn{
+    width:140px;
+    height:20px;
+    color:#fff;
+    background:linear-gradient(120deg,#6b60ce 20%,#a166a4);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+    display:none;
+    
+    
+    
+    
+}
+
+.product:hover{
+    background-color: #fff;
+    box-shadow: 2px 2px 30px rgba(0,0,0, 0.1);
+    border-radius: 20px;
+}
+
+.productbox .products .product:hover .btnn{
+    display: block;
+    text-align: center;
+    margin-top:45px;
+    padding:10px 0px 5px;
+    
+}
+
+.productbox .products .product:hover img{
+    margin-top: 20px;
+}
+
+.about{
+    margin:50px auto;
+    width:85%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+.about .aboutBox{
+    width:50%;
+}
+
+.aboutBox img{
+    width:100%;
+    object-fit: content;
+}
+
+.aboutBox h1{
+    color:#333;
+    font-size: 3rem;
+    font-weight: 700px;
+    line-height: 5px;
+}
+
+.aboutBox h3{
+    color:#333;
+    font-size: 2rem;
+    font-weight: 400px;
+}
+
+.aboutBox p{
+    font-size: 1rem;
+    color:#bdbdbd;
+    letter-spacing: 0.5px;
+}
+
+.aboutBox h3 span{
+    font-size: 2rem;
+    color:#7a72ff;
+}
+
+.lastbox{
+    width:85%;
+    background-color: #fff;
+    margin:50px auto;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+
+.lastbox .show1 .showcase{
+    width:250px;
+    height:330px;
+    margin:50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.lastbox .showcase img{
+    width:100%;
+}
+
+.lastbox  .show1{
+    display: flex;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+}
+
+.showcase p{
+    color:#bdbdbd;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.showcase a{
+    text-decoration: none;
+    color:#111;
+    font-size: 1rem;
+
+}
+
+.showcase .btnn2,.bt,.btt{
+    width:140px;
+    height:20px;
+    background: linear-gradient(120deg,#6b60ce 20%,#a166a4);
+    display: none;
+}
+
+.showcase:hover .btnn2{
+     display: block;
+     text-align: center;
+     margin-top: 20px;
+     border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+     padding:13px 0px 7px;
+
+}
+
+.lastbox .show1 .showcase:hover{
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);
+    border-radius: 20px;
+}
+
+.showcase:hover .bt{
+    margin-top: 110px;
+}
+
+.showcase:hover .btt{
+    margin-top:60px ;
+}
+
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top:50px;
+    margin-bottom:50px;
+
+}
+
+.registration .reg{
+    width:400px;
+    height:40px;
+    padding: 10px 0px;
+    border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+    text-indent: 20px;
+    
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration .reg input{
+    width:65%;
+    height:30px;
+    padding-left: 40px;
+    outline:none;
+    font-size: 1rem;
+    border:none;
+}
+
+.registration .reg button{
+    width:80px;
+    height:40px;
+    background-color: #2f2e41;
+    color:#fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius:20px;
+    border:none;
+    outline:none;
+    transition:all ease 0.5s;
+}
+
+.registration .reg button:hover{
+    background-color: #7a72ff;
+
+}
+
+.footer{
+    width:100%;
+    height:50px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer p{
+    color:#fff;
+    font-family: 1rem;
+    font-weight: bold;
+}
+
+
+@media (max-width:768px){
+
+    .container .logo{
+        left: 2px;
+        top: 14px;
+        font-size: 0.5rem;
+}
+
+.container .serchbox{
+    right: 40px;
+    top: 13px;
+    width: 111px;
+    height: 37px;
+}
+.img1{
+    left: 27%;
+    top: 33%;
+}
+.img1 img {
+    height: 219px;
+}
+.inform{
+    left: 81%;
+    top: 62%;
+}
+.inform h1, h2 {
+    font-size:2rem;
+    line-height: 17px;
+}
+
+.inform .btn1{
+    margin-left: 1px;
+}
+
+.aboutBox h1 {
+    font-size: 2rem;
+    line-height: 38px;
+}
+
+.aboutBox h3,.aboutBox h3 span{
+   font-size: 1.5rem;
+        
+    }
+    .about {
+        display: block;
+        text-align: center;
+        width:100%;
+    }
+ .about .aboutBox{
+    display: block;
+    width:100%;
+    text-align: center;
+ }
+ .registration .reg {
+    width: 318px;
+    height: 31px;}
+
+.iconarea a{
+    padding:12px 6px;
+}
+    }
+    
+
+
+    @media(max-width:1024px){
+       .img1{
+        left: 15%;
+       }
+       .img1 img {
+        height: 264px;
+    }
+    .lastbox .show1 .showcase {
+        width: 197px;
+        height: 244px;
+        margin: 40px 118px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+   
